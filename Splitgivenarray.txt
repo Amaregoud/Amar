@@ -1,0 +1,18 @@
+size=int(input("Enter the Number thr size :"))
+arr=[]
+for i in range(size):
+    arr_elements=int(input("Enter the Elements to Add to Array"))
+    arr.append(arr_elements)
+mid=size//2
+arr1=[]
+arr2=[]
+for j in range(size):
+    if j > mid:
+        arr1.append(arr[j])
+    elif j < mid:
+        arr2.append(arr[j])
+    else:
+        print("Enter the Valid Number")
+print(arr1)
+print(arr2)            
+print(arr)
